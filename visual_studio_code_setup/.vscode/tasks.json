@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "msvc build",
+        "type": "shell",
+        "command": "cl.exe",
+        "args": [
+          "/EHsc",
+          "image_viewer.cpp", // source file
+          "/IC:/opencv-4.1.2/opencv/build/include", //location of the OpenCV header Files
+          "/link",
+          "/LIBPATH:C:/opencv-4.1.2/opencv/build/x64/vc19/lib/Release", //location of lib files
+          "ade.lib", //lib files for OpenCV follow
+          "opencv_core412.lib",
+          "opencv_features2d412.lib",
+          "opencv_gapi412.lib",
+          "opencv_imgcodecs412.lib",
+          "opencv_ml412.lib",
+          "opencv_photo412.lib",
+          "opencv_stitching412.lib",
+          "opencv_video412.lib",
+          "opencv_calib3d412.lib",
+          "opencv_dnn412.lib",
+          "opencv_flann412.lib",
+          "opencv_highgui412.lib",
+          "opencv_imgproc412.lib",
+          "opencv_objdetect412.lib",
+          "opencv_python2.lib",
+          "opencv_ts412.lib",
+          "opencv_videoio412.lib"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always"
+        },
+        "problemMatcher": "$msCompile"
+      }
+    ]
+  }

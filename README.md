@@ -1,1 +1,1 @@
-# opencv_with_visual_studio_code
+https://medium.com/@divyendu.narayan/opencv-c-setup-for-microsoft-visual-studio-2019-and-visual-studio-code-in-windows-64-bit-911b1c733b3e
