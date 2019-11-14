@@ -1,4 +1,7 @@
-#include <opencv2/opencv.hpp> 
+#include <opencv2/core/mat.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+
 //Include file for every supported OpenCV function 
 int main( int argc, char** argv ) 
 { 
